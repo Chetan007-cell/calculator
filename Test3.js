@@ -2,8 +2,12 @@ let disp='';
 let ans=0;
 
 function calc(){
-    console.log(disp);
-    return eval(disp);
+    try{
+        return eval(disp);
+    }
+    catch(error){
+        return 'error';
+    }
 }
 
 const var1= document.getElementById('box');
